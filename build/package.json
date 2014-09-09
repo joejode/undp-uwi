@@ -1,0 +1,21 @@
+{
+  "name": "App",
+  "version": "0.0.1",
+  "description": "Edit Me",
+  "contributors": [
+    {
+      "name": "name",
+      "email": "email"
+    },
+    {
+      "name": "name",
+      "email": "email"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-compass": "^0.9.1",
+    "grunt-contrib-uglify": "~0.2.7",
+    "requirejs": "~2.1.10"
+  }
+}

@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+
+		<title>UNDP - Water</title>
+
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="lib/style.css" rel="stylesheet">
+
+		<style media="screen">
+		body {
+			overflow: hidden;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			}
+			img {
+			width: 100%;
+			height: 100%;
+			}
+		</style>
+
+		 <!-- script references -->
+		  <script type="text/javascript" src="vendor/jquery-1.11.1/jquery-1.11.1.min.js"></script>
+		  <script src="vendor/bootstrap/bootstrap.min.js"></script>
+		  <script type="text/javascript" src="lib/script.js"></script>	
+
+		 <script>
+			function run() {
+			var image = document.getElementById('background');
+			image.onload = function() {
+			var engine = new RainyDay({
+			image: this
+			});
+			engine.rain([ [1, 2, 8000] ]);
+			engine.rain([ [3, 3, 0.88], [5, 5, 0.9], [6, 2, 1] ], 100);
+			};
+			image.crossOrigin = 'anonymous';
+			image.src = 'http://farm6.static.flickr.com/5527/11686336793_c1781218f6_m.jpg';
+			}
+		</script>
+	</head>
+
+	<body onload="run();">
+		<img id="background" alt="background" src="" />
+
+	</body>
+</html>

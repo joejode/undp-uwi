@@ -26,16 +26,20 @@
 @import 'grid';
 
 body {
-}
 
+}
+/*Conference img*/
+#conference-logo {
+  width: 30%;
+  margin-left: 25%;
+}
 /* BOOTSTRAP 3.x GLOBAL STYLES
 -------------------------------------------------- */
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+  background-color: #D5E5F9;
 }
-
-
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */

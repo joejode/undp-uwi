@@ -35,18 +35,26 @@
   margin: 0px auto;
 }
 
+/*Conference img*/
+/* line 32, ../../src/scss/style.scss */
+#conference-logo {
+  width: 30%;
+  margin-left: 25%;
+}
+
 /* BOOTSTRAP 3.x GLOBAL STYLES
 -------------------------------------------------- */
-/* line 33, ../../src/scss/style.scss */
+/* line 38, ../../src/scss/style.scss */
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+  background-color: #D5E5F9;
 }
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
-/* line 44, ../../src/scss/style.scss */
+/* line 48, ../../src/scss/style.scss */
 .navbar-wrapper {
   position: absolute;
   top: 0;
@@ -58,25 +66,25 @@ body {
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */
-/* line 58, ../../src/scss/style.scss */
+/* line 62, ../../src/scss/style.scss */
 .carousel {
   margin-bottom: 60px;
 }
 
 /* Since positioning the image, we need to help out the caption */
-/* line 62, ../../src/scss/style.scss */
+/* line 66, ../../src/scss/style.scss */
 .carousel-caption {
   z-index: 1;
 }
 
 /* Declare heights because of positioning of img element */
-/* line 67, ../../src/scss/style.scss */
+/* line 71, ../../src/scss/style.scss */
 .carousel .item {
   height: 400px;
   background-color: #555;
 }
 
-/* line 71, ../../src/scss/style.scss */
+/* line 75, ../../src/scss/style.scss */
 .carousel img {
   position: absolute;
   top: 0;
@@ -87,25 +95,25 @@ body {
 /* MARKETING CONTENT
 -------------------------------------------------- */
 /* Pad the edges of the mobile views a bit */
-/* line 84, ../../src/scss/style.scss */
+/* line 88, ../../src/scss/style.scss */
 .marketing {
   padding-left: 15px;
   padding-right: 15px;
 }
 
 /* Center align the text within the three columns below the carousel */
-/* line 90, ../../src/scss/style.scss */
+/* line 94, ../../src/scss/style.scss */
 .marketing .col-lg-4 {
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* line 94, ../../src/scss/style.scss */
+/* line 98, ../../src/scss/style.scss */
 .marketing h2 {
   font-weight: normal;
 }
 
-/* line 97, ../../src/scss/style.scss */
+/* line 101, ../../src/scss/style.scss */
 .marketing .col-lg-4 p {
   margin-left: 10px;
   margin-right: 10px;
@@ -113,13 +121,13 @@ body {
 
 /* Featurettes
 ------------------------- */
-/* line 106, ../../src/scss/style.scss */
+/* line 110, ../../src/scss/style.scss */
 .featurette-divider {
   margin: 80px 0;
   /* Space out the Bootstrap <hr> more */
 }
 
-/* line 109, ../../src/scss/style.scss */
+/* line 113, ../../src/scss/style.scss */
 .featurette {
   padding-top: 120px;
   /* Vertically center images part 1: add padding above and below text. */
@@ -127,25 +135,25 @@ body {
   /* Vertically center images part 2: clear their floats. */
 }
 
-/* line 113, ../../src/scss/style.scss */
+/* line 117, ../../src/scss/style.scss */
 .featurette-image {
   margin-top: -120px;
   /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
 }
 
 /* Give some space on the sides of the floated elements so text doesn't run right into it. */
-/* line 118, ../../src/scss/style.scss */
+/* line 122, ../../src/scss/style.scss */
 .featurette-image.pull-left {
   margin-right: 40px;
 }
 
-/* line 121, ../../src/scss/style.scss */
+/* line 125, ../../src/scss/style.scss */
 .featurette-image.pull-right {
   margin-left: 40px;
 }
 
 /* Thin out the marketing headings */
-/* line 126, ../../src/scss/style.scss */
+/* line 130, ../../src/scss/style.scss */
 .featurette-heading {
   font-size: 50px;
   font-weight: 300;
@@ -157,14 +165,14 @@ body {
 -------------------------------------------------- */
 @media (min-width: 768px) {
   /* Remve the edge padding needed for mobile */
-  /* line 141, ../../src/scss/style.scss */
+  /* line 145, ../../src/scss/style.scss */
   .marketing {
     padding-left: 0;
     padding-right: 0;
   }
 
   /* Navbar positioning foo */
-  /* line 147, ../../src/scss/style.scss */
+  /* line 151, ../../src/scss/style.scss */
   .navbar-wrapper {
     margin-top: 20px;
     margin-bottom: -90px;
@@ -172,13 +180,13 @@ body {
   }
 
   /* The navbar becomes detached from the top, so we round the corners */
-  /* line 152, ../../src/scss/style.scss */
+  /* line 156, ../../src/scss/style.scss */
   .navbar-wrapper .navbar {
     border-radius: 4px;
   }
 
   /* Bump up size of carousel content */
-  /* line 157, ../../src/scss/style.scss */
+  /* line 161, ../../src/scss/style.scss */
   .carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;

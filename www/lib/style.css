@@ -66,8 +66,12 @@ body {
   z-index: 10;
 }
 
-nav {
-    color: white;
+.navbar {
+    
+}
+
+.navbar-fixed-top{
+    border-radius: 0px;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -167,6 +171,33 @@ nav {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
+}
+
+.text-muted {
+    color: white;
+    opacity: 0.7;
+}
+
+/*Contact form*/
+.contact-form {
+    background: white;
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10%;
+}
+
+.contact-form input{
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.submitBtn{
+    display: block;
+    margin-top: 10px;
+    background: #4987DE;
+    color:white; 
 }
 
 /* RESPONSIVE CSS

@@ -200,6 +200,13 @@ body {
     color:white; 
 }
 
+
+  .content{
+       background-color: #FCFCFC;
+      border-radius: 3px;
+      margin-top: 10%;
+  }
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 768px) {

@@ -48,8 +48,11 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
-  background-color: #D5E5F9;
+  background-color: #12A697;
+    
 }
+
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -197,4 +200,25 @@ nav {
     font-size: 21px;
     line-height: 1.4;
   }
+    
+    /*about page*/
+    /*lists*/
+li{
+    margin-bottom: 10px;
 }
+    
+.side_design{
+    max-height:100%;
+    
+    
+}
+    
+div{
+    overflow: hidden;
+    }
+    
+  .content{
+       background-color: #FCFCFC;
+  }
+
+    

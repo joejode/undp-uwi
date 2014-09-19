@@ -239,15 +239,14 @@ li{
 }
     
 .side_design{
-    max-height:100%;
-    
-    
+    max-height: 129%;
 }
     
-div{
-    overflow: hidden;
-    }
+.sidecontainer{
+    max-height: 100%;
     
+}
+     
   .content{
        background-color: #FCFCFC;
   }

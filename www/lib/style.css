@@ -124,6 +124,7 @@ body {
   font-weight: normal;
 }
 
+
 /* line 101, ../../src/scss/style.scss */
 .marketing .col-lg-4 p {
   margin-left: 10px;
@@ -285,9 +286,14 @@ p {
     color: darkblue;
     font-size: 16.5px;
 }
+    
+.space{
+    line-height: 200%;
+}
 
 /*Sign Up Form */
 #su{
     background-color: white;
     padding: 40px;
     }
+    

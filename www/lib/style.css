@@ -287,11 +287,7 @@ p {
 }
 
 /*Sign Up Form */
-.suc label {
-    min-width: 12%;
-    margin-top: 7px;
-}
-
-    #su{
-        background-color: white;
+#su{
+    background-color: white;
+    padding: 40px;
     }

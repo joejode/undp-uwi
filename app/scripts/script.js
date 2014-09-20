@@ -1,13 +1,3 @@
-function foo() {
-    "use strict";
-    alert("From inside foo");
-}
-
-function foo2() {
-    "use strict";
-    alert("inside foo2");
-}
-
 function isReadyToSubmitForm() {
     "use strict";
     console.log(document.getElementById("userFname").value);

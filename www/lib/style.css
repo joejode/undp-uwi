@@ -200,6 +200,13 @@ body {
     color:white; 
 }
 
+
+  .content{
+       background-color: #FCFCFC;
+      border-radius: 3px;
+      margin-top: 10%;
+  }
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 768px) {
@@ -251,4 +258,36 @@ li{
        background-color: #FCFCFC;
   }
 
+  /* About Us Div*/
+#au {
+    width: 50%;
+    background-color: white;
     
+}
+
+#auh {
+    color: darkblue;
+    font-family: fantasy;
+    text-align: center;
+}
+
+p {
+    font-family:serif;
+    font-size: 16.5px;
+}
+
+.highlight {
+    font-family: monospace;
+    color: darkblue;
+    font-size: 16.5px;
+}
+
+/*Sign Up Form */
+.suc label {
+    min-width: 12%;
+    margin-top: 7px;
+}
+
+    #su{
+        background-color: white;
+    }

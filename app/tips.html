@@ -17,8 +17,11 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
 	</head>
-	<body class="tips">
+	<body class="tips" onload="run();">
+
+        <img id="background" alt="background" src="" style="width:100%;height:100%;"/>
   <nav class="navbar-wrapper">
       <div class="container">
       <div class="navbar navbar-default navbar-fixed-top">
@@ -51,11 +54,12 @@
       </div>
       </div><!--container-->
   </nav><!-- /navbar wrapper -->
-    <div class="container main">
+    <div class="container main" style="margin-top: -60% !important;">
+
             <div class="row content" >
                 <div class="col-md-2 col-xs-2 col-sm-2">
                 </div>
-                <div class="col-md-10 col-xs-10 col-sm-10 text">
+                <div class="col-md-10 col-xs-10 col-sm-10 text" style="z-index: 8675310;">
                     <h1>Water Conservation </h1>
                     <h3>Water conservation in the home</h3>
                     <ol> 
@@ -123,8 +127,6 @@
             </div>
         </div>
       <!-- script references -->
-  <script type="text/javascript" src="vendor/jquery-1.11.1/jquery-1.11.1.min.js"></script>
-  <script src="vendor/bootstrap/bootstrap.min.js"></script>
-  <script type="text/javascript" src="lib/script.js"></script>
+  <script type="text/javascript" src="scripts/script.js"></script>
   </body>
 </html>

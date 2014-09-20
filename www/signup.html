@@ -26,7 +26,7 @@
   	      <span class="icon-bar"></span>
   	      <span class="icon-bar"></span>
   	    </a>
-          <a class="navbar-brand" href="#">H2O & You</a>
+          <a class="navbar-brand" href="#">H2O&YOU</a>
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -50,7 +50,7 @@
     <div class="container" id="su">
       <div class="col-md-12 col-sm-12 col-xs-12">
                  
-        <form class="suc" name="Join" action="signup_form_action.asp" method="get">
+        <form id="signupForm" class="suc" name="Join" onsubmit="validateForm(); return false">
           <legend>Personal Information</legend>
           <label for="firstname">First Name: </label><input type="text" name="firstname" required="required"><br/>
           <label for="lastname">Last Name: </label><input type="text" name="lastname" required="required"><br/>
@@ -270,7 +270,7 @@
                     <label for="whyvol">Why do you want to become an H2O & You member?</label><br/>
                 <textarea rows="5" cols="50" name="reason">Enter text here...</textarea>
 
-            <br/> <input class="buttons" type="submit" value="Submit" onclick="alert('Your application has been successfully sent. Thank you!')">
+            <br/> <button onclick="validateForm(); return false" type="button">Submit</button> <span class="text-danger" id="error-msg"></span>
             <br/>
     </form>
          

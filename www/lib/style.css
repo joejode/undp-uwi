@@ -244,20 +244,24 @@ body {
 li{
     margin-bottom: 10px;
 }
-    
-.side_design{
-    max-height: 129%;
-}
-    
-.sidecontainer{
-    max-height: 100%;
-    
-}
-     
-  .content{
-       background-color: #FCFCFC;
-  }
 
+.main{
+    margin-top: 7%;
+}
+    
+.content{
+    background-image: url("http://upload.wikimedia.org/wikipedia/commons/e/e2/Water_texture_1380387_Nevit.jpg");
+    background-repeat: repeat
+}
+
+.text{
+    background-color: #FCFCFC;
+}
+    
+#contact_form_text{
+    padding-left: 15%;
+}
+    
   /* About Us Div*/
 #au {
     width: 50%;

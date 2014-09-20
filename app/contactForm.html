@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta name="generator" content="Bootply" />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+
+		<title>H20 & You</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+	</head>
+	<body>
+<nav class="navbar-wrapper">
+    <div class="container">
+      <div class="navbar navbar-default navbar-fixed-top">
+        
+          <div class="navbar-header">
+  	    <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+  	      <span class="icon-bar"></span>
+  	      <span class="icon-bar"></span>
+  	      <span class="icon-bar"></span>
+  	    </a>
+          <a class="navbar-brand" href="index.html">H2O&U</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html" class="myText">Home</a></li>
+              <li><a href="/about.html" target="ext" class="myText">About</a></li>
+                <li><a href="/tips.html" class="myText">Tips</a></li>
+              <li><a href="/contactForm.html" class="myText">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">How to Help<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Take Action</a></li>
+                  <li><a href="#">Spread The Word</a></li>
+
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+      </div>
+    </div><!-- /container -->
+  </nav><!-- /navbar wrapper -->
+
+
+    <div class="container content">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <h2>Water Conservation Conference:</h2>
+          <h3> Lets Rally Together to make a Change !</h3>
+          <img id="conference-logo"src="img/water-for-life-logo.png">
+          <h4><b>When:</b> September 21,2014</h4>
+          <h4><b>Where:</b> </h4>
+          <h4>Topics to be Covered:</h4>
+          <ul>
+            <li>How can you make a difference?</li>
+            <li>Proper handling and storage of water.</li>
+            <li>Guest Speaker from WASA</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6 contact-form">
+          <h2>Register Here</h2>
+          <p>First Name:</p>
+          <input id="userFname"></input>
+          <p>Last Name:</p>
+          <input id="userLname"></input>
+          <p>Email Address:</p>
+          <input id="userEmail"></input>
+          <button type="button" class="btn btn-default submitBtn" onclick="isReadyToSubmitForm()">Submit</button>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-sm-12 col-xs-12 hidden">
+        <h1 class="col-md-7 col-sm-7 col-xs-7"> Thank You for joining the mission.</h1>
+        <img class="col-md-1 col-sm-1 col-xs-1" src="img/confirm.png"/>
+      </div>
+    </div><!-- /container -->
+  </div><!-- /navbar wrapper -->
+
+  <div class="navbar-fixed-bottom">
+    <div class="container">
+     <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p> Find this project <a href="https://github.com/joejode/undp-uwi">here.</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+  </div>  
+
+  <!-- script references -->
+  <script type="text/javascript" src="scripts/script.js"></script>
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+        <!-- build:js(.) scripts/plugins.js -->
+        <script src="bower_components/bootstrap/js/affix.js"></script>
+        <script src="bower_components/bootstrap/js/alert.js"></script>
+        <script src="bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="bower_components/bootstrap/js/modal.js"></script>
+        <script src="bower_components/bootstrap/js/transition.js"></script>
+        <script src="bower_components/bootstrap/js/button.js"></script>
+        <script src="bower_components/bootstrap/js/popover.js"></script>
+        <script src="bower_components/bootstrap/js/carousel.js"></script>
+        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="bower_components/bootstrap/js/collapse.js"></script>
+        <script src="bower_components/bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+  </body>
+</html>

@@ -87,3 +87,256 @@ body {
     border-bottom: 0;
   }
 }
+
+#conference-logo {
+  width: 30%;
+  margin-left: 25%;
+}
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  background-color: #12A697;
+    
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+/* line 48, ../../src/scss/style.scss */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.navbar {
+    
+}
+
+.navbar-fixed-top{
+    border-radius: 0px;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+/* line 62, ../../src/scss/style.scss */
+.carousel {
+  margin-bottom: 60px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+/* line 66, ../../src/scss/style.scss */
+.carousel-caption {
+  z-index: 1;
+}
+
+/* Declare heights because of positioning of img element */
+/* line 71, ../../src/scss/style.scss */
+.carousel .item {
+  height: 400px;
+  background-color: #555;
+}
+
+/* line 75, ../../src/scss/style.scss */
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 400px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+/* Pad the edges of the mobile views a bit */
+/* line 88, ../../src/scss/style.scss */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+/* line 94, ../../src/scss/style.scss */
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* line 98, ../../src/scss/style.scss */
+.marketing h2 {
+  font-weight: normal;
+}
+
+/* line 101, ../../src/scss/style.scss */
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Featurettes
+------------------------- */
+/* line 110, ../../src/scss/style.scss */
+.featurette-divider {
+  margin: 80px 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+/* line 113, ../../src/scss/style.scss */
+.featurette {
+  padding-top: 120px;
+  /* Vertically center images part 1: add padding above and below text. */
+  overflow: hidden;
+  /* Vertically center images part 2: clear their floats. */
+}
+
+/* line 117, ../../src/scss/style.scss */
+.featurette-image {
+  margin-top: -120px;
+    max-width:300px;
+  /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+/* line 122, ../../src/scss/style.scss */
+.featurette-image.pull-left {
+  margin-right: 40px;
+}
+
+/* line 125, ../../src/scss/style.scss */
+.featurette-image.pull-right {
+  margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+/* line 130, ../../src/scss/style.scss */
+.featurette-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.text-muted {
+    color: white;
+    opacity: 0.7;
+}
+
+/*Contact form*/
+.contact-form {
+    background: white;
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10%;
+}
+
+.contact-form input{
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.submitBtn{
+    display: block;
+    margin-top: 10px;
+    background: #4987DE;
+    color:white; 
+}
+
+
+  .content{
+       background-color: #FCFCFC;
+      border-radius: 3px;
+      margin-top: 10%;
+  }
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  /* Remve the edge padding needed for mobile */
+  /* line 145, ../../src/scss/style.scss */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Navbar positioning foo */
+  /* line 151, ../../src/scss/style.scss */
+  .navbar-wrapper {
+    margin-top: 20px;
+    margin-bottom: -90px;
+    /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  /* line 156, ../../src/scss/style.scss */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  /* line 161, ../../src/scss/style.scss */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+    
+    /*about page*/
+    /*lists*/
+li{
+    margin-bottom: 10px;
+}
+    
+.side_design{
+    max-height: 129%;
+}
+    
+.sidecontainer{
+    max-height: 100%;
+    
+}
+     
+  .content{
+       background-color: #FCFCFC;
+  }
+
+  /* About Us Div*/
+#au {
+    width: 50%;
+    background-color: white;
+    
+}
+
+#auh {
+    color: darkblue;
+    font-family: fantasy;
+    text-align: center;
+}
+
+p {
+    font-family:serif;
+    font-size: 16.5px;
+}
+
+.highlight {
+    font-family: monospace;
+    color: darkblue;
+    font-size: 16.5px;
+}
+
+/*Sign Up Form */
+.suc label {
+    min-width: 12%;
+    margin-top: 7px;
+}
+
+    #su{
+        background-color: white;
+    }
+  }

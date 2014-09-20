@@ -10,6 +10,35 @@ function isReadyToSubmitForm() {
     console.log(document.getElementById("userFname").value);
 }
 
+function validateForm(){
+    var form = document.forms["signupForm"];
+    var number = form["number1"].value;
+    if(isNaN(number)){
+        showError("Phone number must be a number");
+        return false;
+    }
+    var email = form["email1"].value;
+    sendEmail(email);
+    console.log(number);
+}
+
+var showError = function(message){
+    var error = document.getElementById("error-msg");
+    error.style.visibility = "visible";
+    error.innerHTML = message;
+}
+
+var sendEmail = function(email){
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4) {
+            alert("Email sent");
+        }
+    }
+    xmlhttp.open("GET", "http://cirrusdb.hostoi.com/sendEmail.php?email="+ email, true);
+    xmlhttp.send();
+}
+
 function RainyDay(a, b) {
     if (this === window) return new RainyDay(a);
     this.img = a.image;

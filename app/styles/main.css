@@ -172,6 +172,7 @@ body {
   font-weight: normal;
 }
 
+
 /* line 101, ../../src/scss/style.scss */
 .marketing .col-lg-4 p {
   margin-left: 10px;
@@ -289,54 +290,58 @@ body {
     
     /*about page*/
     /*lists*/
-li{
-    margin-bottom: 10px;
-}
-    
-.side_design{
-    max-height: 129%;
-}
-    
-.sidecontainer{
-    max-height: 100%;
-    
-}
-     
+  li{
+      margin-bottom: 10px;
+  }
+
+  .main{
+      margin-top: 7%;
+  }
+      
   .content{
-       background-color: #FCFCFC;
+      background-image: url("http://upload.wikimedia.org/wikipedia/commons/e/e2/Water_texture_1380387_Nevit.jpg");
+      background-repeat: repeat
   }
 
-  /* About Us Div*/
-#au {
-    width: 50%;
-    background-color: white;
-    
-}
-
-#auh {
-    color: darkblue;
-    font-family: fantasy;
-    text-align: center;
-}
-
-p {
-    font-family:serif;
-    font-size: 16.5px;
-}
-
-.highlight {
-    font-family: monospace;
-    color: darkblue;
-    font-size: 16.5px;
-}
-
-/*Sign Up Form */
-.suc label {
-    min-width: 12%;
-    margin-top: 7px;
-}
-
-    #su{
-        background-color: white;
-    }
+  .text{
+      background-color: #FCFCFC;
   }
+      
+  #contact_form_text{
+      padding-left: 15%;
+  }
+      
+    /* About Us Div*/
+  #au {
+      width: 50%;
+      background-color: white;
+      
+  }
+
+  #auh {
+      color: darkblue;
+      font-family: fantasy;
+      text-align: center;
+  }
+
+  p {
+      font-family:serif;
+      font-size: 16.5px;
+  }
+
+  .highlight {
+      font-family: monospace;
+      color: darkblue;
+      font-size: 16.5px;
+  }
+      
+  .space{
+      line-height: 200%;
+  }
+
+  /*Sign Up Form */
+  #su{
+      background-color: white;
+      padding: 40px;
+  }
+}

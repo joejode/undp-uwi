@@ -1,3 +1,5 @@
+var contactFormUser = {};
+
 function isReadyToSubmitForm() {
     'use strict';
     console.log(document.getElementById('userFname').value);
@@ -24,6 +26,16 @@ var sendEmail = function (email) {
 
 function validateForm() {
     'use strict';
+
+    contactFormUser.userFname = document.getElementById('userFname').value;
+    contactFormUser.userLname = document.getElementById('userLname').value;
+    contactFormUser.userEmail = document.getElementById('userEmail').value;
+
+    if(contactFormUser.userFname!="" && contactFormUser.userLname!="" && contactFormUser.userEmail!=""){
+        $('#contact-form-submit').removeClass('disabled');
+    }
+
+    /*
     var form = document.forms.signupForm, number = form.number1.value, email = form.email1.value;
     if (isNaN(number)) {
         showError('Phone number must be a number');
@@ -31,6 +43,19 @@ function validateForm() {
     }
     sendEmail(email);
     console.log(number);
+    */
+}
+
+function submitFormRequest() {
+    contactFormUser.checkBox = $('#userCheckBox').is(":checked");
+
+    // the data needs to be sent somewhere to be stored
+
+    // contactFormUser is reset after data is sent off
+    contactFormUser = {};
+
+    // hide back the modal
+    $('#myModal').modal('hide');
 }
 
 function registerUser() {

@@ -36,4 +36,5 @@ function validateForm() {
 function registerUser() {
     'use strict';
 
+    $('#myModal').modal('show');
 }

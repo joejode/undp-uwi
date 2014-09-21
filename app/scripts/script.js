@@ -31,7 +31,7 @@ function validateForm() {
     contactFormUser.userLname = document.getElementById('userLname').value;
     contactFormUser.userEmail = document.getElementById('userEmail').value;
 
-    if(contactFormUser.userFname!="" && contactFormUser.userLname!="" && contactFormUser.userEmail!=""){
+    if(contactFormUser.userFname!=='' && contactFormUser.userLname!=='' && contactFormUser.userEmail!==''){
         $('#contact-form-submit').removeClass('disabled');
     }
 
@@ -47,16 +47,13 @@ function validateForm() {
 }
 
 function submitFormRequest() {
-    contactFormUser.checkBox = $('#userCheckBox').is(":checked");
+    'use strict';
+    contactFormUser.checkBox = $('#userCheckBox').is(':checked');
 
     // the data needs to be sent somewhere to be stored
 
     // resetting the modal
-    document.getElementById('userFname').value = "";
-    document.getElementById('userLname').value = "";
-    document.getElementById('userEmail').value = "";
-    contactFormUser = {};
-    $('#contact-form-submit').addClass('disabled');
+    resetFormRequest();
 
     // hide back the modal
     $('#myModal').modal('hide');
@@ -65,5 +62,19 @@ function submitFormRequest() {
 function registerUser() {
     'use strict';
 
+    // ensures the modal always resets itself after being closed
+    $('#myModal').on('hidden.bs.modal', function () {
+      resetFormRequest();
+    });
+
     $('#myModal').modal('show');
+}
+
+function resetFormRequest(){
+    'use strict';
+    document.getElementById('userFname').value = '';
+    document.getElementById('userLname').value = '';
+    document.getElementById('userEmail').value = '';
+    contactFormUser = {};
+    $('#contact-form-submit').addClass('disabled');
 }

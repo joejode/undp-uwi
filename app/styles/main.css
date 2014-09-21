@@ -54,17 +54,18 @@ body {
   padding: 14px 24px;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-
 .marketing p + h4 {
   margin-top: 28px;
 }
 
+@media screen and (max-width:767px){
+  .content{
+    margin-top:10%;
+  }
+}
+
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px){
   .container {
     max-width: 730px;
   }
@@ -85,5 +86,302 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+}
+
+#conference-logo {
+  width: 30%;
+  margin-left: 25%;
+}
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  background-color: #ffffff;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#12a697', endColorstr = '#73abff');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#12a697', endColorstr = '#73abff')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #12a697, #73abff);
+background-image: -ms-linear-gradient(top, #12a697, #73abff);
+background-image: -o-linear-gradient(top, #12a697, #73abff);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#12a697), to(#73abff));
+background-image: -webkit-linear-gradient(top, #12a697, #73abff);
+background-image: linear-gradient(top, #12a697, #73abff);
+/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+
+    
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+/* line 48, ../../src/scss/style.scss */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.navbar {
+    border-radius: 0 !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+nav {
+    padding: 0px;
+}
+
+.navbar-fixed-top{
+    border-radius: 0px;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-nav li{
+    margin-bottom: 0px !important;    
+}
+
+.navbar-nav li:hover{
+    background: #eee; 
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+/* line 62, ../../src/scss/style.scss */
+.carousel {
+  margin-bottom: 60px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+/* line 66, ../../src/scss/style.scss */
+.carousel-caption {
+  z-index: 1;
+}
+
+/* Declare heights because of positioning of img element */
+/* line 71, ../../src/scss/style.scss */
+.carousel .item {
+  height: 400px;
+  background-color: #555;
+}
+
+/* line 75, ../../src/scss/style.scss */
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 400px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+/* Pad the edges of the mobile views a bit */
+/* line 88, ../../src/scss/style.scss */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+/* line 94, ../../src/scss/style.scss */
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* line 98, ../../src/scss/style.scss */
+.marketing h2 {
+  font-weight: normal;
+}
+
+
+/* line 101, ../../src/scss/style.scss */
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Featurettes
+------------------------- */
+/* line 110, ../../src/scss/style.scss */
+.featurette-divider {
+  margin: 80px 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+/* line 113, ../../src/scss/style.scss */
+.featurette {
+  padding-top: 120px;
+  /* Vertically center images part 1: add padding above and below text. */
+  overflow: hidden;
+  /* Vertically center images part 2: clear their floats. */
+}
+
+/* line 117, ../../src/scss/style.scss */
+.featurette-image {
+  margin-top: -120px;
+    max-width:300px;
+  /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+/* line 122, ../../src/scss/style.scss */
+.featurette-image.pull-left {
+  margin-right: 40px;
+}
+
+/* line 125, ../../src/scss/style.scss */
+.featurette-image.pull-right {
+  margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+/* line 130, ../../src/scss/style.scss */
+.featurette-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.text-muted {
+    color: white;
+    opacity: 0.7;
+}
+
+/*Contact form*/
+.contact-form {
+    background: white;
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10%;
+}
+
+.contact-form input{
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.submitBtn{
+    display: block;
+    margin-top: 10px;
+    background: #4987DE;
+    color:white; 
+}
+
+.content{
+    background-color: #FCFCFC;
+    border-radius: 3px;
+    margin-top: 5%;
+}
+
+.form-box {
+    margin-top: 10%;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  /* Remve the edge padding needed for mobile */
+  /* line 145, ../../src/scss/style.scss */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Navbar positioning foo */
+  /* line 151, ../../src/scss/style.scss */
+  .navbar-wrapper {
+    margin-top: 20px;
+    margin-bottom: -90px;
+    /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  /* line 156, ../../src/scss/style.scss */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  /* line 161, ../../src/scss/style.scss */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+    
+    /*about page*/
+    /*lists*/
+  li{
+      margin-bottom: 10px;
+  }
+
+  .main{
+      margin-top: 7%;
+  }
+      
+  .content{
+      background-image: url("http://upload.wikimedia.org/wikipedia/commons/e/e2/Water_texture_1380387_Nevit.jpg");
+      background-repeat: repeat
+  }
+
+  .text{
+      background-color: #FCFCFC;
+  }
+      
+  #contact_form_text{
+      padding-left: 15%;
+  }
+      
+    /* About Us Div*/
+  #au {
+      width: 50%;
+      background-color: white;
+      
+  }
+
+  #auh {
+      color: darkblue;
+      font-family: fantasy;
+      text-align: center;
+  }
+
+  p {
+      font-family:serif;
+      font-size: 16.5px;
+  }
+
+  .highlight {
+      font-family: monospace;
+      color: darkblue;
+      font-size: 16.5px;
+  }
+      
+  .space{
+      line-height: 200%;
+  }
+
+  /*Sign Up Form */
+  #su{
+      background-color: white;
+      padding: 40px;
   }
 }

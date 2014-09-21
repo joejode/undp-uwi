@@ -19,38 +19,34 @@
 	    <!-- endbuild -->
 	</head>
 	<body>
-  <div class="navbar-wrapper">
-    <div class="container" id="nv" >
-      <div class="navbar navbar-default navbar-static-top">
-        
-          <div class="navbar-header">
-  	    <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-  	      <span class="icon-bar"></span>
-  	      <span class="icon-bar"></span>
-  	      <span class="icon-bar"></span>
-  	    </a>
-          <a class="navbar-brand" href="#">H2O & You</a>
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="http://www.bootply.com" target="ext">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">How to Help<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Take Action</a></li>
-                  <li><a href="#">Spread The Word</a></li>
+    <nav class="navbar-wrapper">
+        <div class="container">
+            <div class="navbar navbar-default navbar-fixed-top">
 
-                </ul>
-              </li>
-            </ul>
-          </div>
-      </div>
-    </div>
+                <div class="navbar-header">
+                    <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </a>
+                    <a class="navbar-brand" href="index.html">H2O &amp; YOU</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html" class="myText">Home</a></li>
+                        <li><a href="/about.html" class="myText">About</a></li>
+                        <li><a href="/tips.html" class="myText">Tips</a></li>
+                        <li><a href="/contactForm.html" class="myText">Contact</a></li>
+                        <li class="active"><a href="/signup.html" class="myText">Signup</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div><!-- /container -->
+    </nav><!-- /navbar wrapper -->
     <div class="container">
         
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text" id="su">
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 form-box" id="su">
             <form class="form-horizontal">
             <fieldset>
             <!-- Form Name -->
@@ -58,28 +54,28 @@
             <!-- Text Input -->
             <div class="form-group">
             <label for="firstname">First Name</label>
-            <input type="text" class="form-control" placeholder="Enter First Name" required>
+            <input id="firstname" type="text" class="form-control" placeholder="Enter First Name" required>
             </div>
             <div class="form-group">
-            <label for="firstname">Last Name</label>
-            <input type="text" class="form-control" placeholder="Enter Last Name" required>
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" class="form-control" placeholder="Enter Last Name" required>
             </div>
             <div class="form-group">
                 <label for="dob">Date of Birth</label>
-                <input type="date" class="form-control" required>
+                <input id="dob" type="date" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="sex">Sex</label>
+                <label>Sex</label>
                 <div class="radio">
-                    <label for="male"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Male</label>
+                    <label for="male"><input type="radio" name="optionsRadios" id="male" value="option1" checked>Male</label>
                 </div>
                 <div class="radio">
-                    <label for="female"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Female</label>
+                    <label for="female"><input type="radio" name="optionsRadios" id="female" value="option2">Female</label>
                 </div>
             </div>
             <div class="form-group">
                 <label for="address">Address</label>
-                <input type="text" class="form-control" placeholder="Enter Street Name" required>
+                <input id="address" type="text" class="form-control" placeholder="Enter Street Name" required>
                 <br/>
                 <input type="text" class="form-control" placeholder="Enter City/Town" required>
                 <br/>
@@ -283,15 +279,15 @@
             </div>
             <div class="form-group">
                 <label for="phnum">Telephone Number</label>
-                <input type="tel" class="form-control" placeholder="Enter your phone number" required>
+                <input id="phnum" type="tel" class="form-control" placeholder="Enter your phone number" required>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" placeholder="Enter your email" required>
+                <input id="email" type="email" class="form-control" placeholder="Enter your email" required>
             </div>
             <div class="form-group">
                 <label for="reason">Why Do You Want To Become A Volunteer?</label>
-                <textarea rows="5" cols="25" required>Tell us here...</textarea>
+                <textarea id="reason" rows="5" cols="25" placeholder="Tell us here..." class="form-control" required></textarea>
             </div>
                 
 <button class="btn btn-success" type="submit">Submit</button>
@@ -300,9 +296,7 @@
             
             
         </div>
-    </div>  
-  </div><!-- /navbar wrapper -->
-
+    </div>
   <div class="navbar-fixed-bottom">
     <div class="container">
      <!-- FOOTER -->

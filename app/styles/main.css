@@ -131,11 +131,32 @@ background-image: linear-gradient(top, #12a697, #73abff);
 }
 
 .navbar {
-    
+    border-radius: 0 !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+nav {
+    padding: 0px;
 }
 
 .navbar-fixed-top{
     border-radius: 0px;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-nav li{
+    margin-bottom: 0px !important;    
+}
+
+.navbar-nav li:hover{
+    background: #eee; 
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -265,11 +286,15 @@ background-image: linear-gradient(top, #12a697, #73abff);
     color:white; 
 }
 
+.content{
+    background-color: #FCFCFC;
+    border-radius: 3px;
+    margin-top: 5%;
+}
 
-  .content{
-       background-color: #FCFCFC;
-      border-radius: 3px;
-  }
+.form-box {
+    margin-top: 10%;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */

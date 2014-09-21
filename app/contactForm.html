@@ -20,47 +20,40 @@
     <!-- endbuild -->
 	</head>
 	<body>
-<nav class="navbar-wrapper">
-    <div class="container">
-      <div class="navbar navbar-default navbar-fixed-top">
-        
-          <div class="navbar-header">
-  	    <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-  	      <span class="icon-bar"></span>
-  	      <span class="icon-bar"></span>
-  	      <span class="icon-bar"></span>
-  	    </a>
-          <a class="navbar-brand" href="index.html">H2O&U</a>
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class=""><a href="index.html" class="myText">Home</a></li>
-              <li><a href="/about.html" class="myText">About</a></li>
-                <li><a href="/tips.html" class="myText">Tips</a></li>
-              <li class="active"><a href="/contactForm.html" class="myText">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">How to Help<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Take Action</a></li>
-                  <li><a href="#">Spread The Word</a></li>
+        <nav class="navbar-wrapper">
+            <div class="container">
+            <div class="navbar navbar-default navbar-fixed-top">
 
+            <div class="navbar-header">
+                <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </a>
+                <a class="navbar-brand" href="index.html">H2O &amp; YOU</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html" class="myText">Home</a></li>
+                    <li><a href="/about.html" class="myText">About</a></li>
+                    <li><a href="/tips.html" class="myText">Tips</a></li>
+                    <li class="active"><a href="/contactForm.html" class="myText">Contact</a></li>
+                    <li><a href="/signup.html" class="myText">Signup</a></li>
                 </ul>
-              </li>
-            </ul>
-          </div>
+            </div>
 
-      </div>
-    </div><!-- /container -->
-  </nav><!-- /navbar wrapper -->
-    <div class="container main">
-        <div class="row content">
+        </div>
+        </div><!-- /container -->
+        </nav><!-- /navbar wrapper -->
+        <div class="container main">
+            <div class="row content">
             <div class="col-md-2">
             </div>
             <div class="col-md-10 text " id="contact_form_text">
                 <div class="row">
                     <h2>Water Conservation Conference:</h2>
                     <h3> Let's Rally Together to make a Change !</h3>
-                    <img id="conference-logo"src="img/water-for-life-logo.png">
+                    <img alt="logo" id="conference-logo" src="img/water-for-life-logo.png">
                 </div>
                 <div class="row"> 
                     <div class="col-md-6">
@@ -77,84 +70,60 @@
                         </ul>
                     </div>
                 </div>
-                <button class="btn btn-success" type="submit" onclick="registerUser();">Sign Up!</button>
-                <br><br>
+                <div class="col-md-6">
+                <form> 
+                    <fieldset>
+                        <legend>Register Here</legend>
+                        <div class="form-group">
+                            <label for="firstname">First Name</label>
+                            <input id="firstname" type="text" class="form-control" placeholder="Enter First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Last Name</label>
+                            <input id="lastname" type="text" class="form-control" placeholder="Enter Last Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" class="form-control" placeholder="Enter Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input id="password" type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label>Do you wish to be included on our mailing list to receive our awesome monthly newsletter? </label>
+                            <br/><label><input type="checkbox">Yes, I'd love to!</label>                            
+                        </div>
+                        <button class="btn btn-success" type="submit">Submit</button>
+                    </fieldset>
+                </form>
                 </div>
+                <h1 class="col-md-7 col-sm-7 col-xs-7"> Thank You for joining the mission.</h1>
                 </div>
             </div>
-
-
-  <div class="navbar-fixed-bottom">
-    <div class="container">
-     <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        
-      </footer>
-
-    </div><!-- /.container -->
-  </div>  
-
-  <div class="modal fade" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h4 class="modal-title">Sign Up Here</h4>
         </div>
-        <div class="modal-body">
-          <form> 
-             <fieldset>
-                  <div class="form-group">
-                      <label for="firstname">First Name</label>
-                      <input type="text" id="userFname" class="form-control" onkeyUp="validateForm();" placeholder="Enter First Name" required>
-                  </div>
-                  <div class="form-group">
-                      <label for="firstname">Last Name</label>
-                      <input type="text" id="userLname" class="form-control" onkeyUp="validateForm();" placeholder="Enter Last Name" required>
-                  </div>
-                  <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="email" id="userEmail" class="form-control" onkeyUp="validateForm();" placeholder="Enter Email" required>
-                  </div>
-                  <div class="form-group">
-                      <label>Do you wish to be included on our mailing list to receive our awesome monthly newsletter? </label>
-                      <br/><label><input type="checkbox" id="userCheckBox" onclick="validateForm();">Yes, I'd love to!</label>                            
-                  </div>
-                  
-              </fieldset>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-          <button type="button" id="contact-form-submit" onclick="submitFormRequest();" class="btn btn-success disabled">Submit</button>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
 
-  
+        <div class="navbar-fixed-bottom">
+        <div class="container">
+        <!-- FOOTER -->
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p> Find this project <a href="https://github.com/joejode/undp-uwi">here.</a></p>
+        </footer>
 
-  <!-- script references -->
-  <script type="text/javascript" src="scripts/script.js"></script>
+        </div><!-- /.container -->
+        </div>  
+
+        <!-- script references -->
+        <script type="text/javascript" src="scripts/script.js"></script>
 
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+        <!-- build:js(.) scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
 
         <!-- build:js(.) scripts/plugins.js -->
         <script src="bower_components/bootstrap/js/affix.js"></script>
@@ -174,5 +143,5 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
-  </body>
+    </body>
 </html>

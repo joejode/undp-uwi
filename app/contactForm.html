@@ -70,35 +70,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6">
-                <form> 
-                    <fieldset>
-                        <legend>Register Here</legend>
-                        <div class="form-group">
-                            <label for="firstname">First Name</label>
-                            <input id="firstname" type="text" class="form-control" placeholder="Enter First Name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="lastname">Last Name</label>
-                            <input id="lastname" type="text" class="form-control" placeholder="Enter Last Name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input id="email" type="email" class="form-control" placeholder="Enter Email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input id="password" type="password" class="form-control" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <label>Do you wish to be included on our mailing list to receive our awesome monthly newsletter? </label>
-                            <br/><label><input type="checkbox">Yes, I'd love to!</label>                            
-                        </div>
-                        <button class="btn btn-success" type="submit">Submit</button>
-                    </fieldset>
-                </form>
-                </div>
-                <h1 class="col-md-7 col-sm-7 col-xs-7"> Thank You for joining the mission.</h1>
+
+                <button class="btn btn-success" type="submit" onclick="registerUser();">Sign Up!</button>
+                <br><br>
+                
                 </div>
             </div>
         </div>
@@ -113,6 +88,44 @@
 
         </div><!-- /.container -->
         </div>  
+
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Sign Up Here</h4>
+              </div>
+              <div class="modal-body">
+                <form> 
+                   <fieldset>
+                        <div class="form-group">
+                            <label for="firstname">First Name</label>
+                            <input type="text" id="userFname" class="form-control" onkeyUp="validateForm();" placeholder="Enter First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname">Last Name</label>
+                            <input type="text" id="userLname" class="form-control" onkeyUp="validateForm();" placeholder="Enter Last Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="userEmail" class="form-control" onkeyUp="validateForm();" placeholder="Enter Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Do you wish to be included on our mailing list to receive our awesome monthly newsletter? </label>
+                            <br/><label><input type="checkbox" id="userCheckBox" onclick="validateForm();">Yes, I'd love to!</label>                            
+                        </div>
+                        
+                    </fieldset>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" id="contact-form-submit" onclick="submitFormRequest();" class="btn btn-success disabled">Submit</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
 
         <!-- script references -->
         <script type="text/javascript" src="scripts/script.js"></script>

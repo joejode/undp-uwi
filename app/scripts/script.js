@@ -51,8 +51,12 @@ function submitFormRequest() {
 
     // the data needs to be sent somewhere to be stored
 
-    // contactFormUser is reset after data is sent off
+    // resetting the modal
+    document.getElementById('userFname').value = "";
+    document.getElementById('userLname').value = "";
+    document.getElementById('userEmail').value = "";
     contactFormUser = {};
+    $('#contact-form-submit').addClass('disabled');
 
     // hide back the modal
     $('#myModal').modal('hide');

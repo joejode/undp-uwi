@@ -31,7 +31,7 @@ function validateForm() {
     contactFormUser.userLname = document.getElementById('userLname').value;
     contactFormUser.userEmail = document.getElementById('userEmail').value;
 
-    if(contactFormUser.userFname!=='' && contactFormUser.userLname!=='' && contactFormUser.userEmail!==''){
+    if (contactFormUser.userFname !== '' && contactFormUser.userLname !== '' && contactFormUser.userEmail !== '') {
         $('#contact-form-submit').removeClass('disabled');
     }
 

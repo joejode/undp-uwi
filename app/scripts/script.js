@@ -57,6 +57,8 @@ function submitFormRequest() {
 
     // hide back the modal
     $('#myModal').modal('hide');
+    
+    sendEmail(contactFormUser.userEmail);
 }
 
 function registerUser() {

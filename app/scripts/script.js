@@ -49,7 +49,8 @@ function validateForm() {
 function submitFormRequest() {
     'use strict';
     contactFormUser.checkBox = $('#userCheckBox').is(':checked');
-
+    
+    sendEmail(contactFormUser.userEmail);
     // the data needs to be sent somewhere to be stored
 
     // resetting the modal
@@ -57,8 +58,6 @@ function submitFormRequest() {
 
     // hide back the modal
     $('#myModal').modal('hide');
-    
-    sendEmail(contactFormUser.userEmail);
 }
 
 function registerUser() {
